@@ -1,25 +1,34 @@
 <html>
   <body>
     <h2>How to download spaces recordings from Twitter/X</h2>
-    <ul>
-      <li>Step 1<br />
-        <p>twspace_dl -i https://twitter.com/i/spaces/XXXXXXXX -c /Users/[username]/Desktop/cookie.txt -o /Users/[username]/Desktop/spaces.m4a</p>
+    <h3>Note: this requires typing in commands into your terminal, so make sure you're comfortable with this kind of thing.</h3>
+    <ol>
+      <li>Install twspace-dl downloader for Python<br />
+        <p>In your terminal, type <code>pip install twspace-dl</code><br />
+          Note: you need to have <a href="https://www.hostinger.com/tutorials/how-to-install-ffmpeg">FFMPEG</a> installed as well.</p>
       </li>
-      <li>Step 2<br />
-        <p>Lorem ipsum</p>
+      <li>Install Cookie-Editor for Chrome<br />
+        <p>You'll need to generate a "cookie.txt" file while you're logged into your Twitter/X account.<br />
+        Download this free Chrome add-on <a href="https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm">here</a><br />
+        (This add on can also be found for Firefox)
+        </p>
       </li>
-      <li>Step 3<br />
-        <p>Lorem ipsum</p>
+      <li>Generate the cookie text file<br />
+        <p>Log into Twitter/X, and activate the Cookie-Editor plugin. Click "Export" and then choose "Netscape".<br />
+          This will copy something to your clipboard. Paste it into a plain text editor (no formatting!) like TextEdit or Notepad.<br />
+          Save the file as "cookie.txt" to your desktop or somewhere easy to find.</p>
       </li>
-      <li>Step 4<br />
-        <p>Lorem ipsum</p>
+      <li>You're ready to download your space!<br />
+        <p>First, get the URL for the Space you want to download. You can do this by going to the space and clicking the "Share" button.<br />
+        The URL should look something like <code>https://twitter.com/i/spaces/XXXXXXXX</code></p><br /><br />
+        Then you need a path to your cookie.txt file.<br />
+        <code>/Users/[username]/Desktop/cookie.txt</code><br /><br />
+        And finally, you'll need a path to where you want your spaces file to save.<br />
+        <code>/Users/[username]/Desktop/[PickANameForYourSpacesRecording]</code><br /><br />
+        <p>Back in the terminal, type the following command:<br />
+          <code>twspace_dl -i https://twitter.com/i/spaces/XXXXXXXX -c /Users/[username]/Desktop/cookie.txt -o /Users/[username]/Desktop/MySpacesRecording</code></p>
+        </p>
       </li>
-      <li>Step 5<br />
-        <p>Lorem ipsum</p>
-      </li>
-      <li>Step 6<br />
-        <p>Lorem ipsum</p>
-      </li>
-    </ul>
+    </ol>
   </body>
 </html>
