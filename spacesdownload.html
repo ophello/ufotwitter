@@ -1,10 +1,15 @@
 <html>
+  <head>
+    <style>
+      code {background-color="#ccc";}
+    </style>
+  </head>
   <body>
     <h2>How to download spaces recordings from Twitter/X</h2>
     <h3>Note: this requires typing in commands into your terminal, so make sure you're comfortable with this kind of thing.</h3>
     <ol>
       <li><strong>Install twspace-dl downloader for Python</strong><br />
-        <p>In your terminal, type <code>pip install twspace-dl</code><br />
+        <p>In your terminal, type:  <code>pip install twspace-dl</code><br />
           Note: you need to have <a href="https://www.hostinger.com/tutorials/how-to-install-ffmpeg">FFMPEG</a> installed as well.</p>
       </li>
       <li><strong>Install Cookie-Editor for Chrome</strong><br />
@@ -18,13 +23,15 @@
           This will copy something to your clipboard. Paste it into a plain text editor (no formatting!) like TextEdit or Notepad.<br />
           Save the file as "cookie.txt" to your desktop or somewhere easy to find.</p>
       </li>
-      <li><strong>You're ready to download your space!</strong><br />
+      <li><strong>Get your file paths ready</strong><br />
         <p>First, get the URL for the Space you want to download. You can do this by going to the space and clicking the "Share" button.<br />
         The URL should look something like this:  <code>https://twitter.com/i/spaces/XXXXXXXX</code></p><br />
         Then you need a path to your cookie.txt file.<br />
         <code>    /Users/[username]/Desktop/cookie.txt</code><br /><br />
         And finally, you'll need a path to where you want your spaces file to save.<br />
         <code>    /Users/[username]/Desktop/[PickANameForYourSpacesRecording]</code><br /><br />
+      </li>
+      <li><strong>You're ready to download your space!</strong><br />
         <p>Back in the terminal, type the following command:<br />
           <code>    twspace_dl -i https://twitter.com/i/spaces/XXXXXXXX -c /Users/[username]/Desktop/cookie.txt -o /Users/[username]/Desktop/MySpacesRecording</code></p>
         </p>
