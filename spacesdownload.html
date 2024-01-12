@@ -2,7 +2,7 @@
   <head>
     <style>
       code {
-        background-color:#ccc;
+        background-color:#ddd;
         margin-left:10px;
            }
     </style>
@@ -11,8 +11,9 @@
     <h2>How to download spaces recordings from Twitter/X</h2>
     <h3>Note: this requires typing in commands into your terminal, so make sure you're comfortable with this kind of thing.</h3>
     <ol>
-      <li><strong>Install <code>twspace-dl</code> for Python</strong><br />
-        <p>In your terminal, type: <code>pip install twspace-dl</code><br />
+      <li><strong>Install twspace-dl for Python</strong><br />
+        <p>In your terminal, type the following command:<br />
+          <code>pip install twspace-dl</code><br />
           Note: you need to have <a href="https://www.hostinger.com/tutorials/how-to-install-ffmpeg">FFMPEG</a> installed as well.</p>
       </li>
       <li><strong>Install Cookie-Editor for Chrome</strong><br />
@@ -30,14 +31,14 @@
         The URL should look something like this:<br />
         <code>https://twitter.com/i/spaces/XXXXXXXX</code><br />
         Then you need a path to your cookie.txt file:<br />
-        <code>/Users/[username]/Desktop/cookie.txt</code><br /><br />
+        <code>/Users/[YourUserName]/Desktop/cookie.txt</code><br /><br />
         And finally, you'll need a path to where you want your spaces file to save:<br />
-        <code>/Users/[username]/Desktop/[MySpacesRecording]</code>
+        <code>/Users/[YourUserName]/Desktop/[MySpacesRecording]</code>
         </p>
       </li>
       <li><strong>You're ready to download your space!</strong><br />
         <p>Back in the terminal, type the following command:<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;<code>twspace_dl -i https://twitter.com/i/spaces/XXXXXXXX -c /Users/[username]/Desktop/cookie.txt -o /Users/[username]/Desktop/MySpacesRecording</code></p>
+          <code>twspace_dl -i https://twitter.com/i/spaces/XXXXXXXX -c /Users/[YourUserName]/Desktop/cookie.txt -o /Users/[YourUserName]/Desktop/MySpacesRecording</code></p>
         </p>
       </li>
     </ol>
