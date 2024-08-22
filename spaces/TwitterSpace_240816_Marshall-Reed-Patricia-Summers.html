@@ -9,7 +9,8 @@
   <style type="text/css">
     p.p1 {margin:0; font-size: 19px; font-family: Georgia, serif;}
     p.p2 {margin: 0; font-size: 19px; font-family: Georgia, serif; min-height: 23px}
-    body {margin:40px;}
+    body { margin:40px; background-color: white; color: black;}
+    .dark-mode { background-color: #000; color: #777;}
   </style>
 </head>
 <body>
@@ -24,9 +25,21 @@
 <p class="p2"><br></p>
 <p class="p1">-ophello</p>
 <p class="p2"><b></b><br></p>
-<p class="p2"><b></b><br></p>
+
+
+<button onclick="myFunction()">Toggle dark mode!</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+<br><br>
 
 <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+
 <br>
 
 <p class="p2"><b></b><br></p>
